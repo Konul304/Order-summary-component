@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Display';
+    background: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+    position: absolute;
+    width: 450px;
+    height: auto;
+    left: 39%;
+    top:10%;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 1px;
+}
+
+.container img {
+    border-radius: 20px 20px 0 0;
+}
+
+.info {
+    margin: 40px 50px;
+}
+
+h1 {
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.7rem;
+    color: hsl(224, 23%, 55%);
+}
+
+#parag {
+    margin-bottom: 18px;
+}
+
+.price {
+    padding: 20px;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.priceInfo {
+    margin-left: 15px;
+}
+
+.price>p:last-child {
+    margin-left: 90px;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.priceInfo :first-child {
+    font-weight: bold;
+    color: hsl(223, 47%, 23%);
+}
+
+.button {
+    width: 100%;
+    height: 35px;
+    color: hsl(224, 23%, 55%);
+    padding: 15px 0 0px 0;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button:hover {
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 5px 8px 18px hsl(225, 100%, 98%);
+    cursor: pointer;
+}
+
+#b1 {
+    margin-top: 25px;
+}
+
+#b2 {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:375px){
+
+    body {
+        font-family: 'Red Hat Display';
+        background: url(./images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: hsl(225, 100%, 94%);
+    }
+    .container {
+        position: absolute;
+        left:5px;
+        top:50px;
+        height: auto;
+        background-color: white;
+        border-radius: 20px 20px 20px 20px;
+        padding-bottom: 1px;
+    }
+
+    .info {
+        margin: 30px 40px;
+    }
+
+    #parag{
+        width: 300px;
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (max-width:1050px){
+
+    .container {
+        position: absolute;
+        left:200px;
+        top:50px;
+        height: auto;
+    }
+}
